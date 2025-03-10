@@ -22,19 +22,33 @@
         }
         .card {
             border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         footer {
             background-color: #007bff;
             color: #ffffff;
         }
-        .card.bg-light {
-            background-color: #f5f5dc; 
+        .card img {
+            object-fit: cover;
+            height: 200px;
         }
-        .card.bg-primary {
-            background-color: #007bff;
+        .card h5 {
+            font-weight: bold;
         }
-        .card.bg-white {
-            background-color: #ffffff; 
+        .card p {
+            color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        @media (max-width: 576px) {
+            .card img {
+                height: 150px;
+            }
         }
     </style>
 </head>
